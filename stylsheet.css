@@ -8,6 +8,9 @@ body {
 
 navbar {
     display: flex;
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
 }
 
 /* Navbar Links (the pages it takes you to) */
@@ -34,4 +37,19 @@ navbar a background:hover {
 
 }
 
+/* Normal desktop styles */
 
+
+/* Tablet and smaller */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+    .navbar a {
+        font-size: 14px;
+    }
+}
