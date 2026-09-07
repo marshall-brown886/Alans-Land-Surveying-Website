@@ -1,11 +1,9 @@
 /*Whole page on screen*/
-
 body { 
     color:lightgray
 }
 
 /*Designing navbar and setup*/
-
 navbar {
     display: flex;
     list-style-type: none;
@@ -14,31 +12,24 @@ navbar {
 }
 
 /* Navbar Links (the pages it takes you to) */
-
 navbar a {
 
 }
 
 /*Navbar Links Background*/
-
 navbar a background {
 
 }
 
 /*Navbar Links whilst mouse is hovering over*/
-
 navbar a:hover {
 
 }
 
 /*Navbar Links Background whilst mouse is hovering over*/
-
 navbar a background:hover {
 
 }
-
-/* Normal desktop styles */
-
 
 /* Tablet and smaller */
 @media (max-width: 768px) {
