@@ -17,11 +17,11 @@
        #Parent-child relationship to create top section (showcase of page) hero showcase
         <section class="hero">
             
-            <div class="hero-content-active">
+            <div class="slide active">
                
             </div>
 
-            <div class="hero-content">
+            <div class="slide">
                
             </div>
 
@@ -31,5 +31,28 @@
 
         </section>
 
+
+
+
+        <script>
+            let slides = document.querySelectorAll(".slide");
+            let currentSlide = 0;
+
+            function changeSlide() {
+                slides[currentSlide].classList.remove("active");
+
+                currentSlide++;
+
+                if (currentSlide >= slides.length) {
+                    currentSlide = 0;
+                }
+
+            slides[currentSlide].classList.add("active");
+            }
+
+            setInterval(changeSlide, 4000);
+        </script>
+
+        
     </body>
 </html>
