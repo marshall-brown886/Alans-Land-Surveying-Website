@@ -1,6 +1,6 @@
 /*Whole page on screen*/
 body { 
-    color:lightgray
+    color:rgb(211, 211, 211)
 }
 
 /*Heading one*/
@@ -19,13 +19,14 @@ navbar {
     list-style-type: none;
     margin: 5px;
     padding: 5px;
+    color: rgb(4, 65, 4);
 }
 
 /* Navbar Links (the pages it takes you to) */
 navbar a {
-    color:green;
     text-decoration:none;
-
+    color: white;
+    font-family: garamond;
 }
 
 /*Navbar Links Background*/
@@ -40,6 +41,7 @@ navbar a:hover {
 
 /*Navbar Links Background whilst mouse is hovering over*/
 navbar a background:hover {
+    color: #D5FFC8
 
 }
 
@@ -57,18 +59,20 @@ navbar a background:hover {
     }
 }
 
-
+/*splits page into section*/
 .page-container {
     display: flex;
     min-height: 100vh;
 }
 
+/*side section containing contacts info*/
 .sidebar {
     width: 250px;
-    background-color: #093d12;
+    background-color: #43A84A;
     padding: 20px;
 }
 
+/*main page content (faqs, services, etc.)*/
 .main-content {
     flex: 1;
     padding: 20px;
