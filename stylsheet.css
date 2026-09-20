@@ -31,17 +31,19 @@ navbar a {
 
 /*Navbar Links Background*/
 navbar a background {
-
+    color: rgb(4, 65, 4);
 }
 
 /*Navbar Links whilst mouse is hovering over*/
 navbar a:hover {
-
+    color: #98DB84;
+    transition: background-color 0.3s ease;
 }
 
 /*Navbar Links Background whilst mouse is hovering over*/
 navbar a background:hover {
-    color: #D5FFC8
+    color: #D5FFC8;
+    transition: background-color 0.3s ease;
 
 }
 
@@ -70,10 +72,13 @@ navbar a background:hover {
     width: 250px;
     background-color: #43A84A;
     padding: 20px;
+    text-align: center;
+    font-family: garamond;
 }
 
 /*main page content (faqs, services, etc.)*/
 .main-content {
     flex: 1;
     padding: 20px;
+    font-family: garamond;
 }
