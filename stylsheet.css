@@ -56,3 +56,20 @@ navbar a background:hover {
         font-size: 14px;
     }
 }
+
+
+.page-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #093d12;
+    padding: 20px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
