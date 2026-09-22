@@ -33,13 +33,11 @@ p {
 /* Navbar Links (the pages it takes you to) */
 .navbar a {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     text-decoration: none;
     color: rgb(186, 184, 184);
     font-family: Garamond, serif;
     padding: 10px 15px; 
-    height:fit-content;
-    /* DELETED background-color from here so the links are transparent by default */
 }
 
 /* Navbar Links and Background whilst mouse is hovering over */
