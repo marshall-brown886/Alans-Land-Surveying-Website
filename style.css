@@ -21,11 +21,17 @@ p {
 }
 
 /* Designing navbar and setup */
+/* paragraphs */
+p {
+    font-family: garamond;
+}
+
+/* Designing navbar and setup */
 .navbar {
     display: flex;
     list-style-type: none;
     margin: 0;
-    padding: 0 10px;                 
+    padding: 0; /* Changed to 0 so the hover blocks can touch the top/bottom edges */                 
     background-color: rgb(4, 65, 4); 
     width: 100%;
     box-sizing: border-box; 
@@ -33,21 +39,21 @@ p {
     align-items: stretch;
 }
 
-/* 1. ADD THIS NEW RULE: Force the list items to fill the height too */
+/* Force the list items to fill the height too */
 .navbar li {
     display: flex;
     align-items: stretch;
 }
 
-/* Navbar Links */
+/* Navbar Links (Normal Desktop Screen) */
 .navbar a {
     display: flex;
     align-items: center;
     text-decoration: none;
     color: rgb(186, 184, 184);
     font-family: Garamond, serif;
-    padding: 10px 20px; 
-    width: 100%; /* Ensures the link fills the full width of the li */
+    padding: 15px 20px; /* This controls how thick the desktop bar looks */
+    width: 100%; 
 }
 
 /* Navbar Links Hover */
@@ -57,9 +63,7 @@ p {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
 /* Tablet and smaller */
-
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -68,19 +72,22 @@ p {
 
 /* Phone */
 @media (max-width: 480px) {
-    .navbar a {
-        font-size: 35px;
-    }
     .navbar {
-        padding: 100px 10px;
+        padding: 0; /* Keeps hover flush on mobile stack */
     }
-    .navbar a:hover {
-    color: #98DB84;           
-    background-color: #D5FFC8; 
-    transition: background-color 0.3s ease, color 0.3s ease;
+
+    .navbar li {
+        width: 100%;
     }
+
+    .navbar a {
+        font-size: 24px;    /* A big, readable size for phones that won't break layouts */
+        padding: 25px 10px; /* Controls how thick the mobile bar items are */
+        justify-content: center;
+    }
+} 
     
-}
+
 
 /*splits page into section*/
 .page-container {
