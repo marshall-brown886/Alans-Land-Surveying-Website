@@ -21,7 +21,6 @@ p {
     display: flex;
     list-style-type: none;
     margin: 0;
-    padding: 10px 20px;
     background-color: rgb(4, 65, 4); /* Moved the green background to the whole bar */
     text-align: center;
     width: 100%;
