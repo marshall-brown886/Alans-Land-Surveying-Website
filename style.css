@@ -25,6 +25,8 @@ p {
     background-color: rgb(4, 65, 4); /* Moved the green background to the whole bar */
     text-align: center;
     width: 100%;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    justify-content: space-around; /* Distributes the links evenly across the navbar */
 }
 
 /* Navbar Links (the pages it takes you to) */
