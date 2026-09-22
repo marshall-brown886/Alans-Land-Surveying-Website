@@ -69,7 +69,7 @@ p {
 /* Phone */
 @media (max-width: 480px) {
     .navbar a {
-        font-size: 75px;
+        font-size: 35px;
     }
     .navbar {
         padding: 100px 10px;
