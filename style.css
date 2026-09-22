@@ -70,6 +70,9 @@ p {
     .navbar a {
         font-size: 14px;
     }
+    .navbar {
+        padding: 100px 10px;
+    }
 }
 
 /*splits page into section*/
