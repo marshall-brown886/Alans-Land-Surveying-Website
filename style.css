@@ -1,6 +1,9 @@
 /*Whole page on screen*/
 body { 
     color:rgb(109, 108, 108)
+    margin: 0;
+    padding: 0;
+
 }
 
 /*Heading one*/
@@ -18,9 +21,10 @@ p {
     display: flex;
     list-style-type: none;
     margin: 5px;
-    padding: 5px;
+    padding: 10px 20px;
     background-color: rgb(4, 65, 4); /* Moved the green background to the whole bar */
     text-align: center;
+    width: 100%;
 }
 
 /* Navbar Links (the pages it takes you to) */
