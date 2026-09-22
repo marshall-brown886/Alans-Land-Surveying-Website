@@ -60,25 +60,22 @@ p {
 
 /* Tablet and smaller */
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .navbar {
-        flex-direction: column; /* Stacks the links vertically instead of horizontally */
-        padding: 0;
-        width: 100%;
-    }
-
-    .navbar li {
-        width: 100%; /* Ensures the list items span the full width of the screen */
-    }
-
-    .navbar a {
-        font-size: 40px;        /* You can easily go up to 45px or 50px now! */
-        padding: 40px 20px;     /* Makes each button row incredibly thick and massive */
-        justify-content: center; /* Centers the text horizontally inside its row */
-        width: 100%;
-        box-sizing: border-box;
+        flex-direction: column;
     }
 }
+
+/* Phone */
+@media (max-width: 480px) {
+    .navbar a {
+        font-size: 75px;
+    }
+    .navbar {
+        padding: 100px 10px;
+    }
+}
+
 /*splits page into section*/
 .page-container {
     display: flex;
