@@ -28,12 +28,9 @@ p {
     text-decoration:none;
     color: white;
     font-family: garamond;
+    background-color: rgb(4, 65, 4);
 }
 
-/*Navbar Links Background*/
-.navbar a background {
-    color: rgb(4, 65, 4);
-}
 
 /*Navbar Links whilst mouse is hovering over*/
 .navbar a:hover {
