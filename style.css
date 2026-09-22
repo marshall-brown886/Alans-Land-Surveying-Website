@@ -22,18 +22,19 @@ p {
     display: flex;
     list-style-type: none;
     margin: 0;
-    padding: 10px 0;                 /* Restored vertical padding for breathing room */
+    padding: 0;                 /* Restored vertical padding for breathing room */
     background-color: rgb(4, 65, 4); /* THIS colors the whole main bar */
     text-align: center;
     width: 100%;
     box-sizing: border-box; 
     justify-content: space-around; 
+    align-items: stretch;
 }
 
 /* Navbar Links (the pages it takes you to) */
 .navbar a {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     text-decoration: none;
     color: rgb(186, 184, 184);
     font-family: Garamond, serif;
