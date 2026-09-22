@@ -1,6 +1,6 @@
 /*Whole page on screen*/
 body { 
-    color:rgb(69, 70, 70);
+    color:rgb(40, 41, 41);
     margin: 0;
     padding: 0;
     background-color: lightgray;
@@ -82,7 +82,6 @@ p {
     padding: 20px;
     text-align: center;
     font-family: garamond;
-    color:rgb(40, 41, 41);
 }
 
 /*main page content (faqs, services, etc.)*/
