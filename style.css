@@ -22,12 +22,12 @@ p {
     display: flex;
     list-style-type: none;
     margin: 0;
-    padding: 5px 0;
-    background-color: rgb(4, 65, 4); /* Moved the green background to the whole bar */
+    padding: 10px 0;                 /* Restored vertical padding for breathing room */
+    background-color: rgb(4, 65, 4); /* THIS colors the whole main bar */
     text-align: center;
     width: 100%;
-    box-sizing: border-box; /* Ensures padding doesn't affect width */
-    justify-content: space-around; /* Distributes the links evenly across the navbar */
+    box-sizing: border-box; 
+    justify-content: space-around; 
 }
 
 /* Navbar Links (the pages it takes you to) */
@@ -35,14 +35,14 @@ p {
     text-decoration: none;
     color: rgb(186, 184, 184);
     font-family: Garamond, serif;
-    padding: 10px 15px; /* Added spacing so the hover effect looks like a clean box */
-    background-color: rgb(4, 65, 4); /* Moved the green background to the whole bar */
+    padding: 10px 15px; 
+    /* DELETED background-color from here so the links are transparent by default */
 }
 
 /* Navbar Links and Background whilst mouse is hovering over */
 .navbar a:hover {
-    color: #98DB84;           /* Text changes to light green */
-    background-color: #D5FFC8; /* Background changes to very light green */
+    color: #98DB84;           
+    background-color: #D5FFC8; /* This remains so the light green block appears ONLY on hover */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
