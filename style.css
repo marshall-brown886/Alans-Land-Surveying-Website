@@ -32,10 +32,13 @@ p {
 
 /* Navbar Links (the pages it takes you to) */
 .navbar a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: rgb(186, 184, 184);
     font-family: Garamond, serif;
     padding: 10px 15px; 
+    height:fit-content;
     /* DELETED background-color from here so the links are transparent by default */
 }
 
@@ -44,7 +47,6 @@ p {
     color: #98DB84;           
     background-color: #D5FFC8; /* This remains so the light green block appears ONLY on hover */
     transition: background-color 0.3s ease, color 0.3s ease;
-    height: 100%; /* Ensures the hover effect covers the full height of the navbar */
 }
 
 /* Tablet and smaller */
