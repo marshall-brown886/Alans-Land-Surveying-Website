@@ -74,6 +74,12 @@ p {
     .navbar {
         padding: 100px 10px;
     }
+    .navbar a:hover {
+    color: #98DB84;           
+    background-color: #D5FFC8; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+    
 }
 
 /*splits page into section*/
