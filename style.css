@@ -13,36 +13,29 @@ p {
     font-family:garamond;
 }
 
-/*Designing navbar and setup*/
+/* Designing navbar and setup */
 .navbar {
     display: flex;
     list-style-type: none;
     margin: 5px;
     padding: 5px;
-    color: rgb(4, 65, 4);
+    background-color: rgb(4, 65, 4); /* Moved the green background to the whole bar */
     text-align: center;
 }
 
 /* Navbar Links (the pages it takes you to) */
 .navbar a {
-    text-decoration:none;
+    text-decoration: none;
     color: white;
-    font-family: garamond;
-    background-color: rgb(4, 65, 4);
+    font-family: Garamond, serif;
+    padding: 10px 15px; /* Added spacing so the hover effect looks like a clean box */
 }
 
-
-/*Navbar Links whilst mouse is hovering over*/
+/* Navbar Links and Background whilst mouse is hovering over */
 .navbar a:hover {
-    color: #98DB84;
-    transition: background-color 0.3s ease;
-}
-
-/*Navbar Links Background whilst mouse is hovering over*/
-.navbar a background:hover {
-    color: #D5FFC8;
-    transition: background-color 0.3s ease;
-
+    color: #98DB84;           /* Text changes to light green */
+    background-color: #D5FFC8; /* Background changes to very light green */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Tablet and smaller */
