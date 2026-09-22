@@ -23,15 +23,20 @@ p {
     list-style-type: none;
     margin: 0;
     padding: 0;                 
-    background-color: rgb(4, 65, 4); /* THIS colors the whole main bar */
-    text-align: center;
+    background-color: rgb(4, 65, 4); 
     width: 100%;
     box-sizing: border-box; 
     justify-content: space-around; 
     align-items: stretch;
 }
 
-/* Navbar Links (the pages it takes you to) */
+/* 1. ADD THIS NEW RULE: Force the list items to fill the height too */
+.navbar li {
+    display: flex;
+    align-items: stretch;
+}
+
+/* Navbar Links */
 .navbar a {
     display: flex;
     align-items: center;
@@ -39,14 +44,16 @@ p {
     color: rgb(186, 184, 184);
     font-family: Garamond, serif;
     padding: 10px 20px; 
+    width: 100%; /* Ensures the link fills the full width of the li */
 }
 
-/* Navbar Links and Background whilst mouse is hovering over */
+/* Navbar Links Hover */
 .navbar a:hover {
     color: #98DB84;           
-    background-color: #D5FFC8; /* This remains so the light green block appears ONLY on hover */
+    background-color: #D5FFC8; 
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 
 /* Tablet and smaller */
 @media (max-width: 768px) {
