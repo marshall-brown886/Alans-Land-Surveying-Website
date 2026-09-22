@@ -22,7 +22,7 @@ p {
     display: flex;
     list-style-type: none;
     margin: 0;
-    padding: 0;                 /* Restored vertical padding for breathing room */
+    padding: 0;                 
     background-color: rgb(4, 65, 4); /* THIS colors the whole main bar */
     text-align: center;
     width: 100%;
