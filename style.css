@@ -73,7 +73,7 @@ p {
 /* Phone */
 @media (max-width: 480px) {
     .navbar {
-        padding: 0; /* Keeps hover flush on mobile stack */
+        padding: 100px;
     }
 
     .navbar li {
