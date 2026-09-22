@@ -20,6 +20,7 @@ navbar {
     margin: 5px;
     padding: 5px;
     color: rgb(4, 65, 4);
+    text-align: center;
 }
 
 /* Navbar Links (the pages it takes you to) */
