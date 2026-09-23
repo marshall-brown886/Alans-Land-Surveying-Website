@@ -219,8 +219,8 @@ p {
 
 /* 3. FORCE the image to stay completely inside its box */
 .info-image img {
-    width: 100%;         
-    height: auto;        
+    width: auto;         
+    height: 100%;        
     display: block;        
 }
 
