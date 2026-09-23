@@ -218,7 +218,7 @@ p {
     max-width: 250px; 
     min-width: 0;     
     position: relative; 
-    height: 250px;       
+    height: auto;       
 }
 
 .info-slide {
