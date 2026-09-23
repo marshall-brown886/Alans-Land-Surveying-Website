@@ -140,34 +140,5 @@
         </div>
 
 
-
-        <script>
-            // Targeted specifically at the info-slide elements
-            const infoSlides = document.querySelectorAll('.info-slide');
-            const infoPrevBtn = document.querySelector('.info-section .prev-btn');
-            const infoNextBtn = document.querySelector('.info-section .next-btn');
-            let infoCurrentIndex = 0;
-
-            function showInfoSlide(index) {
-                // Remove active from current slide
-                infoSlides[infoCurrentIndex].classList.remove('active');
-        
-                // Wrap around logic
-            if (index >= infoSlides.length) {
-                infoCurrentIndex = 0;
-            } else if (index < 0) {
-                infoCurrentIndex = infoSlides.length - 1;
-            } else {
-                infoCurrentIndex = index;
-            }
-        
-            // Add active to the targeted slide
-            infoSlides[infoCurrentIndex].classList.add('active');
-            }
-
-            infoNextBtn.addEventListener('click', () => showInfoSlide(infoCurrentIndex + 1));
-            infoPrevBtn.addEventListener('click', () => showInfoSlide(infoCurrentIndex - 1));
-        </script>
-
     </body>
 </html>
