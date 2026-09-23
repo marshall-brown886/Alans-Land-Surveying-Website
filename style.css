@@ -213,32 +213,38 @@ p {
     margin: 40px 0;    
 }
 
+/* Make this a CSS Grid container */
 .info-image {
     flex: 1;             
     max-width: 250px; 
     min-width: 0;     
+    display: grid;       /* 1. Turns container into a grid layout */
     position: relative; 
-    height: auto;       
+    height: auto;        
 }
 
-.info-slide {
-    position: absolute;
-    top: 0;
-    left: 0;
+/* Stack all images in the exact same grid cell */
+.info-image .info-slide {
+    grid-area: 1 / 1 / 2 / 2; /* 3. Forces all images into the same grid row/column stack */
     width: 100%;      
-    height: 100%;     
-    object-fit: cover;   
+    height: auto;             /* 4. Keeps natural image aspect ratios intact */
+    display: block;        
     border-radius: 8px; 
+    
+    /* 5. Hide inactive slides safely without removing them from layout height calculations */
+    visibility: hidden;
     opacity: 0;
-    transition: opacity 0.5s ease; 
-    pointer-events: none;
+    transition: opacity 0.5s ease;
 }
 
-.info-slide.active {
+/* The active slide becomes visible and dictates the height */
+.info-image .info-slide.active {
+    visibility: visible;
     opacity: 1;
-    pointer-events: auto;
+    position: relative; /* 6. Allows this specific image to push the container's height open */
 }
 
+/* Arrow Button Styles remain unchanged */
 .slide-btn {
     position: absolute;
     top: 50%;
@@ -252,10 +258,5 @@ p {
     font-size: 18px;
     z-index: 10;
 }
-
-.slide-btn:hover {
-    background-color: rgba(4, 65, 4, 0.8); 
-}
-
 .prev-btn { left: 10px; }
 .next-btn { right: 10px; }
