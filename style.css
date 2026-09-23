@@ -229,5 +229,6 @@ p {
 
 /* 4. Set how much width the text container takes up */
 .info-text {
-    flex: 2;             /* Gives the text box double the space of the image */
+    flex: 2;   
+    min-width: 0;          /* Gives the text box double the space of the image */
 }
