@@ -215,6 +215,7 @@ p {
 .info-image {
     flex: 1;             
     max-width: 250px; /* 1. Controls the maximum width of the image container */
+    min-width: 0;      
 }
 
 /* 3. FORCE the image to stay completely inside its box */
@@ -223,7 +224,6 @@ p {
     height: auto;     
     display: block;        
     border-radius: 8px; 
-    min-width: 0; 
 }
 
 
