@@ -212,16 +212,16 @@ p {
 
 /* 2. Set how much width the image container takes up */
 .info-image {
-    flex: 1;             /* Allocates proportional space to the image box */
-    max-width: 400px;    /* Limits the absolute size of the image container */
+    flex: 1;             
+    max-width: 400px;    
 }
 
 /* 3. FORCE the image to stay completely inside its box */
 .info-image img {
-    width: 100%;         /* Makes the image stretch to fill its box */
-    height: auto;        /* Keeps the image aspect ratio perfect (no stretching) */
-    display: block;      /* Removes strange bottom gaps below images */
-    border-radius: 8px;  /* Optional: gives the image nice rounded corners */
+    width: 100%;         
+    height: auto;        
+    display: block;      
+    border-radius: 8px;  
 }
 
 /* 4. Set how much width the text container takes up */
