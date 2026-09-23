@@ -214,7 +214,7 @@ p {
 /* 2. Set how much width the image container takes up */
 .info-image {
     flex: 1;             
-    max-width: 150px;    
+    max-height: 200px; 
 }
 
 /* 3. FORCE the image to stay completely inside its box */
