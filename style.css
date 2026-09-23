@@ -204,6 +204,8 @@ p {
     font-size: 24px;
 }
 
+
+
 .info-section {
     display: flex;
     align-items: center; 
@@ -211,24 +213,49 @@ p {
     margin: 40px 0;    
 }
 
-/* 2. Set how much width the image container takes up */
 .info-image {
     flex: 1;             
-    max-width: 250px; /* 1. Controls the maximum width of the image container */
-    min-width: 0;      
+    max-width: 250px; 
+    min-width: 0;     
+    position: relative; 
+    height: 250px;       
 }
 
-/* 3. FORCE the image to stay completely inside its box */
-.info-image img {
+.info-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;      
-    height: auto;     
-    display: block;        
+    height: 100%;     
+    object-fit: cover;   
     border-radius: 8px; 
+    opacity: 0;
+    transition: opacity 0.5s ease; 
+    pointer-events: none;
 }
 
-
-/* 4. Set how much width the text container takes up */
-.info-text {
-    flex: 2;   
-    min-width: 0;          /* Gives the text box double the space of the image */
+.info-slide.active {
+    opacity: 1;
+    pointer-events: auto;
 }
+
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    z-index: 10;
+}
+
+.slide-btn:hover {
+    background-color: rgba(4, 65, 4, 0.8); 
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
