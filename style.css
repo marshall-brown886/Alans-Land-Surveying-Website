@@ -22,6 +22,7 @@ p {
 
 /* Designing navbar and setup */
 /* paragraphs */
+
 p {
     font-family: garamond;
 }
@@ -213,15 +214,14 @@ p {
 /* 2. Set how much width the image container takes up */
 .info-image {
     flex: 1;             
-    max-width: 400px;    
+    max-width: 150px;    
 }
 
 /* 3. FORCE the image to stay completely inside its box */
 .info-image img {
     width: 100%;         
     height: auto;        
-    display: block;      
-    border-radius: 8px;  
+    display: block;        
 }
 
 /* 4. Set how much width the text container takes up */
