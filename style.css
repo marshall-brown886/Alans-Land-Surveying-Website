@@ -219,10 +219,11 @@ p {
 
 /* 3. FORCE the image to stay completely inside its box */
 .info-image img {
-    width: 100%;      /* 2. Forces the image to fill the 250px container width */
+    width: 100%;      
     height: auto;     
     display: block;        
     border-radius: 8px; 
+    min-width: 0; 
 }
 
 
