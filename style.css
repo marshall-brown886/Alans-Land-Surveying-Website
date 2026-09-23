@@ -257,6 +257,7 @@ p {
     border-radius: 50%;
     font-size: 18px;
     z-index: 10;
+    pointer-events: auto;
 }
 
 .slide-btn:hover {
