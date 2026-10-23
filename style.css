@@ -271,6 +271,6 @@ p {
   background-color: lightgray; 
   color: black;            
   text-align: center;        /* Center the text */
-  padding: 8px 16px;         /* Small top/bottom and side spacing */
+  padding: 8px 10px;         /* Small top/bottom and side spacing */
   font-size: 0.875rem;       /* Small, clean font size */
 }
